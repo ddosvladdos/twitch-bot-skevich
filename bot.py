@@ -125,7 +125,7 @@ def ask_gemini(question, nick, api_key, key_order):
     
     try:
         print(f"Запит до Gemini: {question}")
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         response = model.generate_content(
             [system_prompt, question],
             generation_config={
