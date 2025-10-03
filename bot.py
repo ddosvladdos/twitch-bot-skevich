@@ -20,7 +20,7 @@ GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 server = 'irc.chat.twitch.tv'
 port = 6667
 nickname = '6otihok_kyky'
-channel = '#hapurab_i_iiochigab'
+channel = '#skevich_'
 
 ignore_nicks = ['sad_sweet', 'alloy_13', 'mijiqpxahtep']
 dobvoyobs = ['frostmoornx']
