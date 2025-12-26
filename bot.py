@@ -278,6 +278,10 @@ def skelya_description(skelya_size):
         return "фазлік починає заздрити WHAT"
     else:
         return "напиши мені в інстраграмі, аккаунт skevichh NOTED"
+    
+def get_arc_death_date():
+    death_date = random.randint(7, 21)
+    return f"Арк райдерс помре через {death_date} днів xz"
 
 def get_skelya_size(nick):
     rule = define_nick_rule(nick)
@@ -347,6 +351,8 @@ while True:
                 send_message(sock, nick, "Marvel Rivals об'єктивно - це найкраща сессіонка в світі на даний момент xz")
             elif text.strip() == "!наві":
                 send_message(sock, nick, "навіть наві вже створили склад по Marvel Rivals, а як справи у дедлока? LO")
+            elif text.strip() == "!арк":
+                send_message(sock, nick, get_arc_death_date())
             elif text.strip() == "!свий":
                 send_message(sock, nick, "а я все бачив ReallyMad")
             elif text.startswith("!погода"):
@@ -383,7 +389,7 @@ while True:
                 reply = 'Свий сука ReallyMad'
                 send_message(sock, nick, reply)
             elif text.strip() == "!help":
-                reply = "Доступні команди: !білд, !скеля, !дедлок, !погода [місто], !курс_крипти [назва крипти], !курс [назва валюти з НБУ], !сбу, !обс, !хуйня, !питання [твоє питання], !марвел, !наві"
+                reply = "Доступні команди: !білд, !скеля, !дедлок, !погода [місто], !курс_крипти [назва крипти], !курс [назва валюти з НБУ], !сбу, !обс, !хуйня, !питання [твоє питання], !марвел, !наві, !арк"
                 send_message(sock, nick, reply)
             elif text.startswith("!idi") and nick == 'hapurab_i_iiochigab':
                 parts = text.split(maxsplit=1)
